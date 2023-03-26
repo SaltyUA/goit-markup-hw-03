@@ -19,15 +19,48 @@ body {
   color: var(--text-color);
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
 .link {
   text-decoration: none;
 }
 
-.list {
-  list-style: none;
+/* ----------------------------HEADER-------------------------------------- */
+.header {
+  border-bottom: 1px solid var(--accent-color);
 }
 
-/* ----------------------------HEADER-------------------------------------- */
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.header-container {
+  padding: 24px 0;
+  display: flex;
+  gap: 332px;
+}
+
+.navigation {
+  display: flex;
+  gap: 76px;
+}
 
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -46,14 +79,17 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-brand-color);
 }
 
-.header-link {
+.navigation-list {
+  display: flex;
+  gap: 40px;
+}
+
+.navigation-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -61,12 +97,17 @@ body {
   color: var(--dark-color);
 }
 
-.header-link:is(:hover, :focus) {
+.navigation-link:is(:hover, :focus) {
   color: var(--pressed-state-color);
 }
 
 .header-address {
   font-style: normal;
+}
+
+.address-list {
+  display: flex;
+  gap: 40px;
 }
 
 .address-link {
@@ -85,12 +126,20 @@ body {
   background-color: var(--hero-background-color);
 }
 
+.hero-container {
+  padding: 188px 0;
+}
+
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white-background-color);
+  margin-bottom: 48px;
+  width: 496px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-btn {
@@ -98,12 +147,17 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.04em;
   color: var(--white-background-color);
   cursor: pointer;
+  display: block;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   background-color: var(--primary-brand-color);
+  min-width: 169px;
+  height: 56px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-btn:is(:hover, :focus) {
@@ -114,12 +168,23 @@ body {
 
 /* ----------------------------FEATURES-------------------------------------- */
 
+.features-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+
 .features-top-text {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark-color);
+  margin-bottom: 8px;
 }
 
 .features-bottom-text {
@@ -130,6 +195,10 @@ body {
 
 /* ----------------------------PRODUCTS-------------------------------------- */
 
+.products-container {
+  padding-bottom: 120px;
+}
+
 .products-title {
   font-size: 36px;
   line-height: 1.11;
@@ -137,16 +206,35 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--dark-color);
+  margin-bottom: 72px;
+}
+
+.products-list {
+  display: flex;
+  gap: 24px;
 }
 
 /* ----------------------------TEAM-------------------------------------- */
+
+.team-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 .team {
   background-color: var(--light-color);
 }
 
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
 .team-item {
   background-color: var(--white-background-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-title {
   font-size: 36px;
@@ -155,6 +243,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--dark-color);
+  margin-bottom: 72px;
 }
 
 .team-top-text {
@@ -164,6 +253,8 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--dark-color);
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 .team-bottom-text {
   font-size: 16px;
@@ -177,11 +268,18 @@ body {
 .footer {
   background-color: var(--dark-color);
 }
+
+.footer-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light-color);
+  width: 264px;
 }
 
 .footer-logo {
@@ -194,6 +292,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--light-color);
+  margin-bottom: 16px;
 }
 
 .footer-logo-web {

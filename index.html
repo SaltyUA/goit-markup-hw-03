@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -127,9 +128,11 @@
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img src="./images/mark.jpg" alt="mark" width="264" />
+              <div class="team-item-container">
+                <img src="./images/mark.jpg" alt="mark" width="264" />
               <h3 class="team-top-text">Mark Guerrero</h3>
               <p class="team-bottom-text">Product Designer</p>
+              </div>
             </li>
             <li class="team-item">
               <img src="./images/tom.jpg" alt="tom" width="264" />
@@ -137,14 +140,20 @@
               <p class="team-bottom-text">Frontend Developer</p>
             </li>
             <li class="team-item">
-              <img src="./images/camila.jpg" alt="camila" width="264" />
+              <div class="team-item-container">  
+                <img src="./images/camila.jpg" alt="camila" width="264" />
               <h3 class="team-top-text">Camila Garcia</h3>
               <p class="team-bottom-text">Marketing</p>
+            </div>
+            
             </li>
             <li class="team-item">
-              <img src="./images/daniel.jpg" alt="daniel" width="264" />
+              <div class="team-item-container">
+                <img src="./images/daniel.jpg" alt="daniel" width="264" />
               <h3 class="team-top-text">Daniel Wilson</h3>
               <p class="team-bottom-text">UI Designer</p>
+            </div>
+              
             </li>
           </ul>
         </div class="container team-container">

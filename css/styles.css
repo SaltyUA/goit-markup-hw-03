@@ -45,6 +45,8 @@ img {
 
 /* ----------------------------HEADER-------------------------------------- */
 .header {
+  padding-top: 24px;
+  padding-bottom: 24px;
   border-bottom: 1px solid var(--accent-color);
 }
 
@@ -56,8 +58,6 @@ img {
 }
 
 .header-container {
-  padding-top: 24px;
-  padding-bottom: 24px;
   display: flex;
   gap: 332px;
 }
@@ -129,10 +129,8 @@ img {
 
 .hero {
   background-color: var(--hero-background-color);
-}
-
-.hero-container {
-  padding: 188px 0;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -173,7 +171,7 @@ img {
 
 /* ----------------------------FEATURES-------------------------------------- */
 
-.features-container {
+.features {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -181,6 +179,10 @@ img {
 .features-list {
   display: flex;
   gap: 24px;
+}
+
+.features-item {
+  width: 264px;
 }
 
 .features-top-text {
@@ -200,7 +202,7 @@ img {
 
 /* ----------------------------PRODUCTS-------------------------------------- */
 
-.products-container {
+.products {
   padding-bottom: 120px;
 }
 
@@ -221,7 +223,7 @@ img {
 
 /* ----------------------------TEAM-------------------------------------- */
 
-.team-container {
+.team {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -233,10 +235,6 @@ img {
 .team-list {
   display: flex;
   gap: 24px;
-}
-
-.team-item-container {
-  padding-bottom: 32px;
 }
 
 .team-item {
@@ -256,6 +254,11 @@ img {
   margin-bottom: 72px;
 }
 
+.team-item-text {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
 .team-top-text {
   font-weight: 500;
   font-size: 20px;
@@ -263,9 +266,9 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--dark-color);
-  margin-top: 32px;
   margin-bottom: 8px;
 }
+
 .team-bottom-text {
   font-size: 16px;
   line-height: 1.5;
@@ -277,9 +280,6 @@ img {
 
 .footer {
   background-color: var(--dark-color);
-}
-
-.footer-container {
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -319,7 +319,7 @@ img {
 
 /* ----------------------------PORTFOLIO-------------------------------------- */
 
-.portfolio-container {
+.portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
 }
@@ -360,16 +360,12 @@ img {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-}
-
-.projects-item {
-  border: 1px solid var(--accent-color);
+  gap: 48px 24px;
 }
 
 .projects-item-text {
-  margin-top: 0;
-  padding: 16px 32px;
+  padding: 32px 16px;
+  border: 1px solid var(--accent-color);
 }
 
 .projects-top-text {

@@ -125,6 +125,7 @@ img {
 .address-link:is(:hover, :focus) {
   color: var(--pressed-state-color);
 }
+
 /* ----------------------------HERO-------------------------------------- */
 
 .hero {
@@ -256,7 +257,7 @@ img {
 
 .team-item-text {
   margin-top: 32px;
-  margin-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 .team-top-text {
@@ -374,6 +375,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--modal-overlay-color);
+  margin-bottom: 8px;
 }
 
 .projects-bottom-text {
